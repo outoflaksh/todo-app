@@ -1,85 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-  }
-  
-  nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
+body, html {
     padding: 0;
-  }
-  
-  nav li {
-    margin-left: 1rem;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  header {
-    background-color: #eee;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  main {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ECEEFF;
+    background-image: linear-gradient(#102454, #2f3b57);
+    min-height: 100vh;
+    width: 100%;
+}
+
+input, button {
+    font: inherit;
+}
+
+section {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    padding: 2rem;
-  }
-  
-  .game-card {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    margin: 1rem;
-    max-width: 300px;
-    padding: 1rem;
+    align-items: center;
+}
+
+.task-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.note-input, .note-submit {
+    border: none;
+    width: auto;
+    padding: 25px 35px;
+    margin: 0 5px;
+}
+
+.note-submit {
+    font-weight: 700;
+    background-color: #007bff;
+    color: #ECEEFF;
+    border-style: none;
+}
+
+.note-input {
+    width: 50%;
+}
+
+.heading {
+    font-size: 3rem;
+    color: #ECEEFF;
+}
+
+.tasks {
+    margin-top: 100px;
+    list-style: none;
+}
+
+.task {
+    font-size: 1.6rem;
+    background-color: #3a4e7a;
+    padding: 15px 25px;
+    border-radius: 15px;
+    margin: 10px 20px;
     text-align: center;
-  }
-  
-  .game-card img {
-    max-width: 100%;
-  }
-  
-  .game-card h2 {
-    margin-top: 0;
-  }
-  
-  .game-card p {
-    margin: 1rem 0;
-  }
-  
-  .game-card a {
-    background-color: #333;
-    border-radius: 5px;
-    color: #fff;
-    display: block;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    }
-    
-    .game-card a:hover {
-    background-color: #444;
-    }
-    
-    footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    }  
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration-line: line-through;
+}
